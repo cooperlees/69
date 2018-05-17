@@ -15,7 +15,7 @@ setup(
     author="Cooper Lees",
     author_email="me@cooperlees.com",
     classifiers=(
-        "License :: OSI Approved :: Apache Software License"
+        "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3.6",
         "Development Status :: 3 - Alpha",
