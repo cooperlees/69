@@ -7,7 +7,7 @@ setup(
     name="69",
     version="0.69",
     description=("Handy module for 2"),
-    long_description="# 69",
+    long_description="# 69\n",
     long_description_content_type="text/markdown",
     modules=["sixtynine.py"],
     url="http://github.com/cooperlees/69",
