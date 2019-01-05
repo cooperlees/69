@@ -8,7 +8,7 @@ trigger:
 
 jobs:
 
-- job: '69 Testing Mac'
+- job: 'Testing_69_Mac'
   pool:
     vmImage: 'macOS-10.13'
   strategy:
@@ -19,7 +19,7 @@ jobs:
         python.version: '3.7'
     maxParallel: 6
 
-- job: '69 Testing Linux'
+- job: 'Testing_69_Linux'
   pool:
     vmImage: 'Ubuntu-16.04'
   strategy:
@@ -30,7 +30,7 @@ jobs:
         python.version: '3.7'
     maxParallel: 2
 
-- job: '69 Testing Windows'
+- job: 'Testing_69_Windows'
   pool:
     vmImage: 'vs2017-win2016'
   strategy:
