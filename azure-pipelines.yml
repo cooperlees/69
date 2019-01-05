@@ -8,16 +8,18 @@ trigger:
 
 jobs:
 
-- job: 'Test'
+- job: '69 Testing'
   pool:
+    vmImage: 'macOS-10.13'
     vmImage: 'Ubuntu-16.04'
+    vmImage: 'vs2017-win2016'
   strategy:
     matrix:
       Python36:
         python.version: '3.6'
       Python37:
         python.version: '3.7'
-    maxParallel: 2
+    maxParallel: 6
 
   steps:
   - task: UsePythonVersion@0
