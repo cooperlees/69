@@ -8,9 +8,31 @@ trigger:
 
 jobs:
 
-- job: 'Test'
+- job: 'Testing_69_Mac'
+  pool:
+    vmImage: 'macOS-10.13'
+  strategy:
+    matrix:
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+    maxParallel: 6
+
+- job: 'Testing_69_Linux'
   pool:
     vmImage: 'Ubuntu-16.04'
+  strategy:
+    matrix:
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+    maxParallel: 2
+
+- job: 'Testing_69_Windows'
+  pool:
+    vmImage: 'vs2017-win2016'
   strategy:
     matrix:
       Python36:
