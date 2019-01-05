@@ -8,11 +8,9 @@ trigger:
 
 jobs:
 
-- job: '69 Testing'
+- job: '69 Testing Mac'
   pool:
     vmImage: 'macOS-10.13'
-    vmImage: 'Ubuntu-16.04'
-    vmImage: 'vs2017-win2016'
   strategy:
     matrix:
       Python36:
@@ -20,6 +18,28 @@ jobs:
       Python37:
         python.version: '3.7'
     maxParallel: 6
+
+- job: '69 Testing Linux'
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  strategy:
+    matrix:
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+    maxParallel: 2
+
+- job: '69 Testing Windows'
+  pool:
+    vmImage: 'vs2017-win2016'
+  strategy:
+    matrix:
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+    maxParallel: 2
 
   steps:
   - task: UsePythonVersion@0
