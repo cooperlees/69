@@ -7,7 +7,6 @@ import sixtynine
 
 
 class TestSixtynine(unittest.TestCase):
-
     def setUp(self):
         self.loop = asyncio.get_event_loop()
 

@@ -4,7 +4,7 @@ import asyncio
 
 
 async def mouthful() -> int:
-    """ What gives 2 people each a mouthful of opportunity """
+    """What gives 2 people each a mouthful of opportunity"""
     return 69
 
 
